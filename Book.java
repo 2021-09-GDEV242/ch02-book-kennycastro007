@@ -10,6 +10,19 @@ class Book
 {
     // The fields.
     private String author;
+    private String title;
+
+    /**
+     * Set the author and title fields when this object
+     * is constructed.
+     */
+    public Book(String bookAuthor, String bookTitle)
+    {
+        author = bookAuthor;
+        title = bookTitle;
+    }
+
+    // Add the methods here ...
     public String getAuthor() {
         return author;
     }
@@ -26,17 +39,11 @@ class Book
         this.title = title;
     }
 
-    private String title;
-
-    /**
-     * Set the author and title fields when this object
-     * is constructed.
-     */
-    public Book(String bookAuthor, String bookTitle)
-    {
-        author = bookAuthor;
-        title = bookTitle;
+    public void printAuthor() {
+        System.out.println(this.author);
+    }
+    public void printTitle() {
+        System.out.println(this.title);
     }
 
-    // Add the methods here ...
 }
