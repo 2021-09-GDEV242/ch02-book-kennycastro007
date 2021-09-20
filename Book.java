@@ -44,7 +44,11 @@ class Book
     }
 
     public void setRefNumber(String ref) {
-        this.refNumber =  ref;
+        if(ref.length() >= 3) {
+            this.refNumber =  ref;
+        } else {
+            System.out.println("RAAAWR!!! GIMME MORE LETTERS!");
+        }
     }
 
     public void printAuthor() {
