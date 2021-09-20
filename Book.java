@@ -55,7 +55,7 @@ class Book
     }
 
     public void printDetails() {
-        System.out.println("Title: " + this.title + ", Author: " + this.author + ", Pages: " + this.pages);
+        System.out.println("Title: " + this.title + ", Author: " + this.author + ", Pages: " + this.pages + ", Ref Number: " + (this.refNumber.length() > 0 ? this.refNumber : "ZZZ"));
     }
 
 }
