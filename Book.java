@@ -11,32 +11,30 @@ class Book
     // The fields.
     private String author;
     private String title;
+    private int pages;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle)
+    public Book(String bookAuthor, String bookTitle, int numPages)
     {
         author = bookAuthor;
         title = bookTitle;
+        pages = numPages;
     }
 
     // Add the methods here ...
+    public int getPages() {
+        return pages;
+    }
+
     public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     public String getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public void printAuthor() {
